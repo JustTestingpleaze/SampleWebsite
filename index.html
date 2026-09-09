@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>[Restaurant Name] — Chicago-Style Hot Dogs & Italian Beef</title>
+<meta name="description" content="Chicago-style hot dogs, Italian beef, and sausages, made fresh in [Your City], WI." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="site-header" id="top">
+  <div class="wrap header-row">
+    <a class="logo" href="#top">[Restaurant Name]</a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="sr-only">Menu</span>
+    </button>
+    <nav class="primary-nav" id="primaryNav">
+      <a href="#menu">Menu</a>
+      <a href="#story">Our Story</a>
+      <a href="#hours">Hours &amp; Location</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-row">
+      <div class="hero-copy">
+        <p class="kicker">Fox Valley, Wisconsin</p>
+        <h1 class="hero-headline">
+          Chicago-style<br />
+          hot dogs &amp;<br />
+          Italian beef.
+        </h1>
+        <p class="hero-sub">
+          Poppy seed buns, hand-piled toppings, and a steam table that
+          never stops. Dragged through the garden, never through ketchup.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#menu">See the menu</a>
+          <a class="btn btn-ghost" href="#hours">Get directions</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 420 240" class="dog-svg" role="img">
+          <title>Illustration of a Chicago-style hot dog</title>
+          <path d="M55,150 Q52,108 100,102 L320,102 Q368,108 365,150 Q368,192 320,198 L100,198 Q52,192 55,150 Z"
+                fill="none" stroke="#22201B" stroke-width="4" stroke-linejoin="round"/>
+          <rect x="78" y="66" width="264" height="58" rx="29"
+                fill="none" stroke="#22201B" stroke-width="4"/>
+          <path class="squiggle" d="M62,72 Q92,40 122,72 T182,72 T242,72 T302,72 T358,72"
+                fill="none" stroke="#D9A404" stroke-width="7" stroke-linecap="round"
+                pathLength="1"/>
+          <g fill="#22201B">
+            <circle cx="96" cy="176" r="3"/>
+            <circle cx="126" cy="184" r="3"/>
+            <circle cx="158" cy="174" r="3"/>
+            <circle cx="196" cy="186" r="3"/>
+            <circle cx="232" cy="174" r="3"/>
+            <circle cx="268" cy="184" r="3"/>
+            <circle cx="302" cy="174" r="3"/>
+            <circle cx="334" cy="184" r="3"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="menu" id="menu">
+    <div class="wrap">
+      <h2 class="section-heading">The menu</h2>
+      <p class="section-sub">A sample lineup — swap in your real items and prices.</p>
+
+      <div class="menu-grid">
+        <div class="menu-group">
+          <h3 class="menu-group-title">Dogs &amp; sausages</h3>
+          <ul class="menu-list">
+            <li><span class="item-name">Classic Chicago Dog</span><span class="leader"></span><span class="item-price">$5.75</span>
+              <p class="item-desc">Poppy seed bun, mustard, relish, onion, tomato, pickle spear, sport peppers, celery salt.</p></li>
+            <li><span class="item-name">Polish Sausage</span><span class="leader"></span><span class="item-price">$6.25</span>
+              <p class="item-desc">Grilled, topped with sautéed onions and peppers.</p></li>
+            <li><span class="item-name">Wisconsin Bratwurst</span><span class="leader"></span><span class="item-price">$6.00</span>
+              <p class="item-desc">Grilled brat, sauerkraut, stone-ground mustard.</p></li>
+            <li><span class="item-name">Cheddar Dog</span><span class="leader"></span><span class="item-price">$6.25</span>
+              <p class="item-desc">All-beef dog, warm cheddar sauce, grilled onions.</p></li>
+          </ul>
+        </div>
+
+        <div class="menu-group">
+          <h3 class="menu-group-title">Beef &amp; sandwiches</h3>
+          <ul class="menu-list">
+            <li><span class="item-name">Italian Beef</span><span class="leader"></span><span class="item-price">$8.50</span>
+              <p class="item-desc">Thin-sliced beef, giardiniera, dipped roll.</p></li>
+            <li><span class="item-name">Beef &amp; Sausage Combo</span><span class="leader"></span><span class="item-price">$9.75</span>
+              <p class="item-desc">Italian beef and grilled sausage on one roll.</p></li>
+            <li><span class="item-name">Meatball Sub</span><span class="leader"></span><span class="item-price">$7.75</span>
+              <p class="item-desc">House meatballs, marinara, melted mozzarella.</p></li>
+          </ul>
+        </div>
+
+        <div class="menu-group">
+          <h3 class="menu-group-title">Sides &amp; drinks</h3>
+          <ul class="menu-list">
+            <li><span class="item-name">Cheese Fries</span><span class="leader"></span><span class="item-price">$4.50</span></li>
+            <li><span class="item-name">Onion Rings</span><span class="leader"></span><span class="item-price">$4.75</span></li>
+            <li><span class="item-name">Root Beer Float</span><span class="leader"></span><span class="item-price">$4.00</span></li>
+            <li><span class="item-name">Fountain Soda</span><span class="leader"></span><span class="item-price">$2.50</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section class="story" id="story">
+    <div class="wrap story-row">
+      <h2 class="section-heading">Our story</h2>
+      <p>
+        Swap this in for the real story — how long you've been open, who's
+        behind the counter, and what makes your version of a Chicago dog
+        worth the drive. A couple of honest sentences beats a paragraph of
+        marketing copy.
+      </p>
+    </div>
+  </section>
+
+  <!-- HOURS & LOCATION -->
+  <section class="hours" id="hours">
+    <div class="wrap hours-row">
+      <div>
+        <h2 class="section-heading">Hours</h2>
+        <ul class="hours-list">
+          <li><span>Mon – Thu</span><span>11:00 AM – 8:00 PM</span></li>
+          <li><span>Fri – Sat</span><span>11:00 AM – 9:00 PM</span></li>
+          <li><span>Sunday</span><span>11:00 AM – 6:00 PM</span></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="section-heading">Location</h2>
+        <address class="location">
+          [Street Address]<br />
+          [City], WI [ZIP]<br />
+          <a href="tel:+19205550100">(920) 555-0100</a>
+        </address>
+        <a class="btn btn-ghost" href="https://maps.google.com/?q=[Street+Address+City+WI+ZIP]" target="_blank" rel="noopener">
+          Open in Google Maps
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" id="contact">
+  <div class="wrap footer-row">
+    <div>
+      <p class="logo footer-logo">[Restaurant Name]</p>
+      <p>[Street Address], [City], WI [ZIP]</p>
+      <p><a href="tel:+19205550100">(920) 555-0100</a> · <a href="mailto:info@example.com">info@example.com</a></p>
+    </div>
+    <div class="footer-note">
+      <p>Sample template — replace every bracketed placeholder with real
+      business info, photos, and menu details before publishing.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
