@@ -1,8 +1,7 @@
 # Sample Restaurant Website
 
-A single-page, mobile-responsive starter site for a Chicago-style
-hot dog & sandwich shop. Plain HTML/CSS/JS — no build step, no
-frameworks, no dependencies to install.
+A single-page, mobile-responsive sample site for a Chicago-style restraunt
+
 
 ## Files
 
